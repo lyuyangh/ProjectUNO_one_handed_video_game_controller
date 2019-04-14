@@ -17,12 +17,15 @@
   3. Low cost        - under $100
   4. General purpose Game Controller  - map to keyboard and mouse
 ---
-## Milestones:
----
 ## Structural Design:
 ---
-## Eembedded System:
+## Embedded System:
 ---
 ## Quality Control:
 ---
 ## Results and demo:
+---
+## Changelog and Future Improvments:
+  4/13 - tested button, gyro, joystick and rotary encoder seperately
+  4/13 - first controller case was built (laser cutter)
+  4/14 - implemented gyro_to_mouse interface
