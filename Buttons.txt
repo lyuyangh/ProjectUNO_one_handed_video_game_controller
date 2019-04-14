@@ -1,0 +1,60 @@
+#include "Mouse.h"<br>
+const int buttonLeft = A0;          // input pin for pushbutton
+const int buttonRight = A1;
+
+void setup() {
+  // make the pushButton pin an input:
+  pinMode(buttonLeft, INPUT);
+  pinMode(buttonRight, INPUT);
+    // initialize control over the mouse:
+  Mouse.begin();
+}
+void loop() {
+  // read the pushbutton:
+  int buttonStateLeft = digitalRead(buttonLeft);
+  if (buttonStateLeft == HIGH) //if the button is pressed
+  {
+    // type out a message
+    Mouse.click(MOUSE_LEFT);
+    delay(50); //Delay for bounce & to let you computer catch up
+  }
+ // read the pushbutton:
+  int buttonStateRight = digitalRead(buttonRight);
+  if (buttonStateRight == HIGH) //if the button is pressed
+  {
+    // type out a message
+    Mouse.click(MOUSE_RIGHT);
+    delay(50); //Delay for bounce & to let you computer catch up
+  }
+}
+
+
+#include "Keyboard.h"<br>
+const int buttonDLeft = A2;          // input pin for pushbutton
+const int buttonDRight = A3;
+
+void setup() {
+  // make the pushButton pin an input:
+  pinMode(buttonDLeft, INPUT);
+  pinMode(buttonDRight, INPUT);
+    // initialize control over the keyboard:
+  Keyboard.begin();
+}
+void loop() {
+  // read the pushbutton:
+  int buttonStateLeft = digitalRead(buttonDLeft);
+  if (buttonStateLeft == HIGH) //if the button is pressed
+  {
+    // type out a message
+    Keyboard.print(KEY_LEFT_SHIFT);
+    delay(50); //Delay for bounce & to let you computer catch up
+  }
+ // read the pushbutton:
+  int buttonStateRight = digitalRead(buttonDRight);
+  if (buttonStateRight == HIGH) //if the button is pressed
+  {
+    // type out a message
+    Keyboard.click(‘space’);
+    delay(50); //Delay for bounce & to let you computer catch up
+  }
+}
