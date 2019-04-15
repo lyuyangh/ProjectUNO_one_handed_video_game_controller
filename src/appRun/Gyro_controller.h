@@ -1,7 +1,7 @@
 /*
  * Gyro_controller.h
- * Created: 4/15/19
- * Last Modified: 4/15/19
+ * Created: 4/14/19
+ * Last Modified: 4/14/19
  * Author: Steven Hu
  * 
  * Known Issues:
@@ -9,11 +9,12 @@
  *    2. need function to change sensitivity
  *    3. need function to adjust tolerance (not used for ver 0.2.5
  * Circuit:
- *    Arduino Leonardo
+ *    Arduino Leonardo/Pro Micro
  *    GY521 -MPU6050 Gyro+Acc
  *      D3 <-> SCL 
  *      D2 <-> SDA
  *      D0 <-> INT
+ *   
  */
 #ifndef GYRO_CONTROLLER_H
 #define GYRO_CONTROLLER_H
@@ -32,7 +33,7 @@ private:
   int sensitivity_x = 140;
   int sensitivity_y = 140;
   int mouse_y_bias = 350;
-  MPU6050 mpu;
+  MPU6050 * mpu;
 public:
   Gyro_controller();
   int calibrate();
