@@ -1,15 +1,15 @@
-# One Hand Video Game Controller
+# Project UNO - A One Handed Video Game Controller
 ---
 ## Goal:
-  * Build a one hand video game controller for people who has limited movability in one of his/her hand.
+  * Build a one hand video game controller for people who has limited movability in one of his/her hands.
 ---
 ## Contributors:
 (ordered in alphabetical order by last name)
-  * Vanessa Cruz  - .................
-  * Lyuyang Hu    - embedded system, electronics, documentations
-  * Cedric Lim    - .................
-  * Claudia Mastan  - .................
-  * Emily Wagner  - laser cutting, electronics
+  * Vanessa Cruz   - .................
+  * Lyuyang Hu     - embedded system, electronics, documentations
+  * Cedric Lim     - .................
+  * Claudia Mastan - .................
+  * Emily Wagner   - laser cutting, electronics
 ---
 ## Design Requirements:
   1. Compact design  - can be held comfortably with one hand.
@@ -20,12 +20,18 @@
 ## Structural Design:
 ---
 ## Embedded System:
+  * Libraries:
+    1. I2Cdev 
+    2. MPU6050
+    3. Mouse
+    4. Keyboard
 ---
 ## Quality Control:
 ---
 ## Results and demo:
 ---
 ## Changelog and Future Improvments:
-  4/13 - tested button, gyro, joystick and rotary encoder seperately
-  4/13 - first controller case was built (laser cutter)
-  4/14 - implemented gyro_to_mouse interface
+  4/13 - tested button, gyro, joystick and rotary encoder seperately  
+  4/13 - first controller case was built (laser cutter)  
+  4/14 - implemented gyro_to_mouse interface (this was abandoned for the current version because it bricked the mociro controller)
+  4/15 - built prototype I and demoed playing Pong at OC Make-a-thon
