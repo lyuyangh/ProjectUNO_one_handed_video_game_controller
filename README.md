@@ -8,7 +8,7 @@
   * Vanessa Cruz   - .................
   * Lyuyang Hu     - embedded system, electronics, documentations
   * Cedric Lim     - .................
-  * Claudia Mastan - .................
+  * Claudia Mastan - embedded system (unit testing)
   * Emily Wagner   - laser cutting, electronics
 ---
 ## Design Requirements:
@@ -30,8 +30,8 @@
 ---
 ## Results and demo:
 ---
-## Changelog and Future Improvments:
-  4/13 - tested button, gyro, joystick and rotary encoder seperately  
-  4/13 - first controller case was built (laser cutter)  
-  4/14 - implemented gyro_to_mouse interface (this was abandoned for the current version because it bricked the mociro controller)
-  4/15 - built prototype I and demoed playing Pong at OC Make-a-thon
+## Changelog and Future Improvements:
+ * 4/13 - tested button, gyro, joystick and rotary encoder separately  
+ * 4/13 - first controller case was built (laser cutter)  
+ * 4/14 - implemented gyro_to_mouse interface (this was abandoned for the current version because it bricked the micro controller)
+ * 4/15 - built prototype I and demoed playing Pong at OC Make-a-thon
